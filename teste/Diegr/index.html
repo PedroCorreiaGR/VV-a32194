@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diegr</title>
+    <link rel="stylesheet" href="css/estilosp.css">
+    <link rel="icon" href="../Diegr/icons/uwu.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="navbar">
+        <div class="textop">
+            <a href="index.html">Diegr</a>
+            <ul class="linksnavbar">
+                <li><a href="contratar.html">Contratar</a></li>
+                <li><a href="regras.html">Regras</a></li>
+
+              </ul>
+        </div>
+    </div>
+    <div class="partea">
+        <div class="CAIXARADOM">
+            <h2>Bem-vindo!</h2>
+            <p>A nossa empressa de contratar assasinos :D, clique em baixo para ver o nosso catalogo!!</p>
+            <button class="btn">Clique aqui</button>
+            <p class="textofixerandom">E descubra a infinidade de assasinos pa matar o seu amigo falso!!! Que não merece M#### nenhuma por se um traidor!! 🥳</p>
+        </div>
+    </div>
+    <div class="coisa2">
+        
+        <div class="text-section">
+          <h1>Não é crime?</h1>
+          <p>Claro que é crime!!</p>
+          <p>Mas absutamente vamos tentar proteger voce de qualquer requecio e evidencias que foi mesmo voce XD</p>
+          <p>E nos também não temos qualqeur responsablidade caso tu sejas encontrado com a policia 😢 boa sorte ao encontrar um e lembre-se de sempre apagar o seu historico LOL</p>
+        </div>
+    
+        
+        <div class="carousel">
+          <button class="carousel-btn prev">❮</button>
+          <div class="carousel-images">
+            <img src="../Diegr/imagens/coro1.jpg" alt="Imagem 1">
+            <img src="../Diegr/imagens/coro2.jpg" alt="Imagem 2">
+            <img src="../Diegr/imagens/coro3.jpg" alt="Imagem 3">
+            <img src="../Diegr/imagens/coro1.jpg" alt="Imagem 1">
+            <img src="../Diegr/imagens/coro2.jpg" alt="Imagem 2">
+            <img src="../Diegr/imagens/coro3.jpg" alt="Imagem 3">
+            <img src="../Diegr/imagens/coro1.jpg" alt="Imagem 1">
+          </div>
+          <button class="carousel-btn next">❯</button>
+        </div>
+      </div>
+      <div class="location-section">
+        <div class="location-info">
+          <h1>Nossa Localização:</h1>
+          <p>
+            Se tiver alguma reclamação venha ca :D
+          </p>
+        </div>
+        <div class="location-map">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52545.225216074355!2d-115.86628580178584!3d37.248230825664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80b8df058d02452d%3A0x5423447b45d4bf37!2sArea%2051!5e0!3m2!1sen!2spt!4v1691785675630!5m2!1sen!2spt" 
+            width="100%" 
+            height="304" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy">
+          </iframe>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="footer-container">
+          <p>&copy; 2024 Diegr. Todos os direitos talvez reservados.</p>
+        </div>
+      </footer>
+
+<script>
+    const images = document.querySelector('.carousel-images');
+const nextButton = document.querySelector('.next');
+const prevButton = document.querySelector('.prev');
+
+let index = 0;
+
+nextButton.addEventListener('click', () => {
+  index = (index + 1) % images.children.length; // Vai para a próxima imagem
+  updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+  index = (index - 1 + images.children.length) % images.children.length; // Volta para a imagem anterior
+  updateCarousel();
+});
+
+function updateCarousel() {
+  images.style.transform = `translateX(-${index * 35}%)`; // Move o carrossel
+}
+
+
+</script>
+</body>
+</html>
